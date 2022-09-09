@@ -6,6 +6,10 @@ plugins=(git gh)
 source $ZSH/oh-my-zsh.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+if [ -f '/usr/share/fzf/key-bindings.zsh' ]; then
+	source "/usr/share/fzf/key-bindings.zsh";
+	source "/usr/share/fzf/completion.zsh";
+fi
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
 --color=dark
 --color=fg:-1,bg:-1,hl:#5fff87,fg+:-1,bg+:-1,hl+:#ffaf5f
