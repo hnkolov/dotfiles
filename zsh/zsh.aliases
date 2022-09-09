@@ -1,0 +1,7 @@
+alias gan="git add -N ."
+alias gcm="git checkout master && git pull"
+alias cat="bat"
+alias vim="nvim"
+vimp() {
+    nvim "$(fzf)"
+}
