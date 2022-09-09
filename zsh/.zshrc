@@ -16,19 +16,7 @@ source $ZPLUG_HOME/init.zsh
 zplug 'wfxr/forgit'
 zplug load
 
-
 export GOPATH="$HOME/go"
-
-alias gcloudlogin="gcloud compute os-login ssh-keys add --key-file ~/.ssh/id_ed25519.pub && gcloud compute os-login ssh-keys list"
-chmod 600 /Users/nnikolov/.ssh/google_compute_engine
-
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/nnikolov/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/nnikolov/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/nnikolov/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/nnikolov/google-cloud-sdk/completion.zsh.inc'; fi
-
 export KITTY_CONFIG_DIRECTORY="~/.config/kitty/kitty.conf"
 export EDITOR=nvim
 
@@ -38,6 +26,9 @@ eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
 if [ -f '~/.secrets.zshrc' ]; then
-    source "secrets.zshrc";
+    source "~/.secrets.zshrc";
+fi
+if [ -f '~/.gc.zshrc' ]; then
+    source "~/.gc.zshrc";
 fi
 source "zsh.aliases"
