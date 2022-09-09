@@ -1,4 +1,4 @@
-export ZSH="/Users/nnikolov/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME=""
 
 plugins=(git gh)
@@ -11,7 +11,7 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
 --color=fg:-1,bg:-1,hl:#5fff87,fg+:-1,bg+:-1,hl+:#ffaf5f
 --color=info:#af87ff,prompt:#5fff87,pointer:#ff87d7,marker:#ff87d7,spinner:#ff87d7
 '
-export ZPLUG_HOME=/opt/homebrew/opt/zplug
+export ZPLUG_HOME=~/.zplug
 source $ZPLUG_HOME/init.zsh
 zplug 'wfxr/forgit'
 zplug load
@@ -21,7 +21,7 @@ export KITTY_CONFIG_DIRECTORY="~/.config/kitty/kitty.conf"
 export EDITOR=nvim
 
 eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+#eval "$(pyenv virtualenv-init -)"
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
@@ -31,4 +31,4 @@ fi
 if [ -f '~/.gc.zshrc' ]; then
     source "~/.gc.zshrc";
 fi
-source "zsh.aliases"
+source "$HOME/zsh.aliases"
