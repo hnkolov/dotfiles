@@ -37,7 +37,8 @@ set laststatus=2
 set relativenumber
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
-let mapleader = ","
+nnoremap <SPACE> <Nop>
+let mapleader = " "
 
 " Buffer stuff
 " This allows buffers to be hidden if you've modified a buffer.
