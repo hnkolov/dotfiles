@@ -32,7 +32,7 @@ eval "$(zoxide init zsh)"
 if [ -f '~/.secrets.zshrc' ]; then
     source "~/.secrets.zshrc";
 fi
-if [ -f '~/.gc.zshrc' ]; then
-    source "~/.gc.zshrc";
+if [ -f "$HOME/.gc.zshrc" ]; then
+    source "$HOME/.gc.zshrc";
 fi
 source "$HOME/zsh.aliases"
