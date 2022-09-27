@@ -87,6 +87,7 @@ let g:rustfmt_autosave = 1
 lua require'lspconfig'.gopls.setup{}
 lua require'lspconfig'.bashls.setup{}
 lua require'lspconfig'.pyright.setup{}
+lua require'lspconfig'.marksman.setup{}
 
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
