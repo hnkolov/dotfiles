@@ -16,7 +16,7 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'rust-lang/rust.vim'
-Plug 'averms/black-nvim'
+Plug 'ellisonleao/glow.nvim'
 call plug#end()
 
 " airline
