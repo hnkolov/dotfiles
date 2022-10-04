@@ -34,6 +34,7 @@ set statusline+=%*
 " let g:syntastic_check_on_wq = 0
 
 set laststatus=2
+set number
 set relativenumber
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
@@ -87,7 +88,6 @@ let g:rustfmt_autosave = 1
 lua require'lspconfig'.gopls.setup{}
 lua require'lspconfig'.bashls.setup{}
 lua require'lspconfig'.pyright.setup{}
-lua require'lspconfig'.marksman.setup{}
 
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
