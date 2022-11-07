@@ -1,1 +1,1 @@
-vim.keymap.set('n','<leader>N', ':NvimTreeToggle<CR>', {})
+vim.keymap.set('n','<leader>n', ':NvimTreeToggle<CR>', {})
