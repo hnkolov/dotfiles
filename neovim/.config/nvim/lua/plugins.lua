@@ -22,6 +22,7 @@ require("packer").startup(function(use)
     use("nvim-treesitter/nvim-treesitter")
     use("nvim-tree/nvim-web-devicons")
     use("romgrk/barbar.nvim")
+	use("L3MON4D3/LuaSnip")
     use {
       'nvim-lualine/lualine.nvim',
       requires = { 'kyazdani42/nvim-web-devicons', opt = true }
