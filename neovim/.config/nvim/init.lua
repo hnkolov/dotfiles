@@ -23,6 +23,8 @@ vim.g.rustfmt_autosave = 1
 vim.g.loaded = 1
 vim.g.loaded_netrwPlugin = 1
 
+vim.g.rustfmt_autosave = 1
+
 require("nvim-tree").setup()
 
 vim.o.background = "dark"
